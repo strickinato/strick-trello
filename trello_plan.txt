@@ -1,0 +1,53 @@
+RAILS API IS BUILT OUT
+
+Rails Model
+1. Board
+2. List
+2. Card
+3 xxxx
+
+Controllers
+1. Boards Controller
+2. Lists Controller
+2. Cards Controller
+3. Add update action to card and list
+
+Views
+1. Board.Index.json.jbuilder
+2. Board.show.json.jbuilder -- Board[List[Cards]]
+3. xxx
+______________________________
+
+Model
+1. Board
+2. List
+2. Card
+3. xxx
+
+Collection
+1. Boards
+2. Lists
+2. Cards
+3. xx
+
+Views
+1. BoardIndex
+1. BoardIndexItem
+2. BoardShow
+2. ListIndex
+2. ListShow
+2. CardItem
+3. ** Add drag and drop to ListIndex // ListShow
+
+
+
+1// == Index Front Page
+2// == Board Page
+3// == Add Drag and Drop
+
+*****************************
+[add bootstrap right away // ]
+
+Slice method - 1 feature at a time all the way through the satck
+
+Layer methods - do all features on model, then all features
