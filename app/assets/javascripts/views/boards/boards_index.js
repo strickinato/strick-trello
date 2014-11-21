@@ -4,10 +4,12 @@ TrelloClone.Views.BoardsIndex = Backbone.CompositeView.extend({
   initialize: function(){
     this.listenTo(TrelloClone.boardCollection, "sync", this.render)
     this.listenTo(TrelloClone.boardCollection, "add", this.addBoard)
-    // Maybe add Remove Board
+    // Later add Remove Board
     TrelloClone.boardCollection.each(function(board){
       this.addBoard(board);
     })
+
+    this.addForm();
   },
 
   addBoard: function(board){
@@ -19,6 +21,12 @@ TrelloClone.Views.BoardsIndex = Backbone.CompositeView.extend({
   },
 
   // For Future removeBoard: function(){},
+
+  addForm: function() {
+    var form = new TrelloClone.Views.NewBoardForm();
+
+    this.addSubview(".new-board-form", form)
+  },
 
   template: JST['boards/index'],
 
