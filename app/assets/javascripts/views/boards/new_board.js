@@ -15,9 +15,8 @@ TrelloClone.Views.NewBoardForm = Backbone.View.extend({
     var formView = this;
     newBoard.save({},{
       success: function(model){
-        alert("saved");
-        debugger;
         TrelloClone.boardCollection.add(model);
+        $("form>#board_title").val("")
       },
       error: function() {
         alert("Did Not Save")

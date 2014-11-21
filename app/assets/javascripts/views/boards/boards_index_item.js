@@ -4,6 +4,19 @@ TrelloClone.Views.BoardsIndexItem = Backbone.View.extend({
 
   className: "board-index-item",
 
+  events: {
+    "click button.delete-board": "deleteBoard"
+  },
+
+  deleteBoard: function(event) {
+    event.preventDefault();
+    this.model.destroy({
+      success: function(model) {
+        TrelloClone.boardCollection.remove(model);
+      }
+    });
+  },
+
   render: function() {
     var content = this.template({
       board: this.model.attributes
