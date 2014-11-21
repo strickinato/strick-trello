@@ -19,3 +19,11 @@
 .boardsItems {
   border: solid 2px black;
 }
+
+.board-index-item {
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  background-color: firebrick;
+  margin: 5px 20px;
+}
