@@ -1,22 +1,4 @@
-RAILS API IS BUILT OUT
 
-Rails Model
-1. Board
-2. List
-2. Card
-3 xxxx
-
-Controllers
-1. Boards Controller
-2. Lists Controller
-2. Cards Controller
-3. Add update action to card and list
-
-Views
-1. Board.Index.json.jbuilder
-2. Board.show.json.jbuilder -- Board[List[Cards]]
-3. xxx
-______________________________
 
 Model
 1. Board

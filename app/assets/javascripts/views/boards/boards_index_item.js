@@ -5,7 +5,14 @@ TrelloClone.Views.BoardsIndexItem = Backbone.View.extend({
   className: "board-index-item",
 
   events: {
-    "click button.delete-board": "deleteBoard"
+    "click button.delete-board": "deleteBoard",
+    "click" : "showBoard"
+  },
+
+  showBoard: function(event){
+    if(event.target.tagName !== "BUTTON") {
+      Backbone.history.navigate("/boards/" + this.model.id)
+    }
   },
 
   deleteBoard: function(event) {
