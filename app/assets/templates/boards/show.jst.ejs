@@ -1,2 +1,6 @@
-<h1><%= board.title %></h1>
-<div id="list-index">WAGOO!</div>
+<h1><%= board.attributes.title %></h1>
+<div id="list-index"></div>
+
+<% board.lists().each(function(list){ %>
+  <p><%= list.attributes.title %></p>
+<% }); %>

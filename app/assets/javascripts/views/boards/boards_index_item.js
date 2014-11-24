@@ -11,7 +11,7 @@ TrelloClone.Views.BoardsIndexItem = Backbone.View.extend({
 
   showBoard: function(event){
     if(event.target.tagName !== "BUTTON") {
-      Backbone.history.navigate("/boards/" + this.model.id)
+      Backbone.history.navigate("/boards/" + this.model.id, {trigger: true})
     }
   },
 
