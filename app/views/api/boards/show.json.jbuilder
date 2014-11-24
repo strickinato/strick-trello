@@ -23,6 +23,6 @@ json.lists @board.lists do |list|
     json.created_at card.created_at
     json.updated_at card.updated_at
     json.ord card.ord
-    json.description list.description
+    json.description card.description
   end
 end
