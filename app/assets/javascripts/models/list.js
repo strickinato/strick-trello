@@ -11,14 +11,14 @@ TrelloClone.Models.List = Backbone.Model.extend({
 
     return this._cards
   },
-  //
-  // parse: function(payload) {
-  //   if (payload.lists) {
-  //     this.lists().set(payload.lists, {parse: true});
-  //     delete(payload.lists);
-  //   }
-  //
-  //   return payload;
-  // }
+
+  parse: function(payload) {
+    if (payload.cards) {
+      this.cards().set(payload.cards, {parse: true});
+      delete(payload.cards);
+    }
+
+    return payload;
+  }
 
 });
