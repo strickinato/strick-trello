@@ -23,3 +23,5 @@ TrelloClone.Collections.Boards = Backbone.Collection.extend({
   }
 
 });
+
+//Need to turn all the boards into subviews.
