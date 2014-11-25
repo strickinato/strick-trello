@@ -38,12 +38,21 @@
 
 
 .single-list {
+  padding: 0px 10px;
   width: 250px;
-  border: solid 2px blue;
+  border: solid 2px black;
   display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  border-radius: 10px;
+  background-color: white;
 }
 
 
 .card {
   background-color: grey;
+  min-height: 40px;
+  top: 0px;
+  border-radius: 10px;
+  padding: 0px 3px;
 }
