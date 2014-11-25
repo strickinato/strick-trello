@@ -5,6 +5,10 @@ TrelloClone.Collections.BoardLists = Backbone.Collection.extend({
 
   initialize: function (models, options) {
     this.board = options.board;
-  }
+  },
+
+  comparator: function(model) {
+    return model.get('ord')
+  },
 
 });

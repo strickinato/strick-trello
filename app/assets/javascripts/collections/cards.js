@@ -6,6 +6,10 @@ TrelloClone.Collections.Cards = Backbone.Collection.extend({
   initialize: function(models, options) {
     this.list = options.list;
     // this.board = options.board
-  }
+  },
+
+  comparator: function(model) {
+    return model.get('ord')
+  },
 
 });

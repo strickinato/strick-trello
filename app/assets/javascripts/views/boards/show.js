@@ -28,7 +28,9 @@ TrelloClone.Views.BoardShow = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.attachSubviews();
+    this.collection.sort();
     $("#list-wrapper").sortable({items: "> div"});
+    $(".card-wrapper").sortable({connectWith: ".card-wrapper"});
     return this;
   },
 
